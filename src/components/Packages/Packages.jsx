@@ -1,4 +1,7 @@
+import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import './Packages.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const packages = [
     {
@@ -123,6 +126,19 @@ const packages = [
     // }
 ];
 
+const renderIcon = (id) => {
+    switch (id) {
+        case 1:
+            return <FontAwesomeIcon icon={faFacebook} />;
+        case 2:
+            return <FontAwesomeIcon icon={faYoutube} />;
+        case 3:
+            return <FontAwesomeIcon icon={faDownload} />;
+        default:
+            return null;
+    }
+}
+
 
 const Packages = () => {
     return (
@@ -161,7 +177,24 @@ const Packages = () => {
                                         </div>
                                         <div className='specification-body'>
                                             {item.packageFeature.map((feature, index) => {
-                                                return <figure className="pricing-row" key={index}>{feature.feature}</figure>
+                                                return (
+                                                    <figure
+                                                        key={index}>
+                                                        <span style={{
+                                                            color: `${feature.id === 1 ? 'blue'
+                                                                :
+                                                                feature.id === 2 ? 'red'
+                                                                    :
+                                                                    feature.id === 3 ? 'green'
+                                                                        : ''
+                                                                }`,
+                                                            marginRight: '5px'
+                                                        }}>
+                                                            {renderIcon(feature.id)}
+                                                        </span>
+                                                        {feature.feature}
+                                                    </figure>
+                                                )
                                             })}
                                         </div>
                                         <div className="pricing-footer">
