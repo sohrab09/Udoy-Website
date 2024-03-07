@@ -142,7 +142,7 @@ const renderIcon = (id) => {
 
 const Packages = () => {
     return (
-        <section className="mainContainer" data-aos="fade-up-right">
+        <section className="mainContainer">
             <div className="margin-body">
 
                 <div>
