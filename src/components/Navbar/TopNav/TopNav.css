@@ -1,0 +1,50 @@
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #008047;
+  padding: 10px 20px;
+}
+
+.welcome-note {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.welcome-note p {
+  margin: 0 5px 0 0;
+  font-weight: bold;
+}
+
+.welcome-note p:last-child {
+  margin-right: 0;
+}
+
+.tariff {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.tariff p {
+  margin: 0 5px 0 0;
+}
+
+.tariff p:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-top {
+    flex-direction: column;
+  }
+}
+
+.social-icon {
+  color: #fff;
+  margin-left: 1rem;
+}
