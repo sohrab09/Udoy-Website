@@ -3,7 +3,7 @@ import './OurWork.css';
 
 const OurWork = () => {
     return (
-        <section className="work-container">
+        <section className="work-container" data-aos="fade-down-left">
 
             <div>
                 <h1 className="title-around-flex">What we do?</h1>

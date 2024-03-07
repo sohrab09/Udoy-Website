@@ -9,8 +9,17 @@ import Support from "./components/Pages/Support/Support";
 import About from "./components/Pages/About/About";
 import Contact from "./components/Pages/Contact/Contact";
 import SelfCareLogin from "./components/Pages/SelfCareLogin/SelfCareLogin";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, [])
+
   return (
     <>
       <Router>

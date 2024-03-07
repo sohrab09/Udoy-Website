@@ -142,7 +142,7 @@ const renderIcon = (id) => {
 
 const Packages = () => {
     return (
-        <section className="mainContainer">
+        <section className="mainContainer" data-aos="fade-up-right">
             <div className="margin-body">
 
                 <div>
@@ -161,7 +161,7 @@ const Packages = () => {
                     {
                         packages.map((item, index) => {
                             return (
-                                <div className="pricing-column-wrapper" key={index}>
+                                <div className="pricing-column-wrapper" key={index} data-aos="zoom-in-up">
                                     <div className="pricing-column">
                                         <div className="pricing-price-row">
                                             <div className="pricing-price-wrapper">

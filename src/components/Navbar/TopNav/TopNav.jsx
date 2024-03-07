@@ -6,7 +6,7 @@ import './TopNav.css';
 
 const TopNav = () => {
     return (
-        <div className="nav-top">
+        <div className="nav-top" data-aos="fade-left">
             <div className="welcome-note">
                 <p>Welcome to UDOY</p>
                 <a href="tel:16631" style={{ textDecoration: "none" }}><p style={{ color: "#fff", marginLeft: "10px" }}><span><FontAwesomeIcon icon={faPhone} /></span> 16631</p></a>
