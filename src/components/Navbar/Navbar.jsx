@@ -12,7 +12,7 @@ function NavBar() {
     return (
         <div>
             <TopNav />
-            <nav className="navbar" data-aos="fade-down">
+            <nav className="navbar">
                 <div className="nav-container">
                     <NavLink exact to="/" className="nav-logo">
                         <span className="bounce-animation">
