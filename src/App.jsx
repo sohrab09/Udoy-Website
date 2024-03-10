@@ -26,7 +26,7 @@ function App() {
       <Router>
         <NavBar />
 
-        <div className="pages">
+        <div>
           <Routes>
             <Route path="/" exact element={<Main />} />
             <Route path="/home-internet" element={<HomeInternet />} />
