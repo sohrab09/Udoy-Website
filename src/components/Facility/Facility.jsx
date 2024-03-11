@@ -12,12 +12,12 @@ const Facility = () => {
             <div className="shadow-layer-one" style={{ backgroundImage: `url(${shadow1})` }}></div>
             <div className="shadow-layer-two" style={{ backgroundImage: `url(${shadow2})` }}></div>
             <div className="auto-container">
-                <div className="sec-title-three light centered">
+                <div className="sec-title-three light centered" data-aos="fade-down">
                     <h2>UDOY Internet <br /> Don’t Suffer The Buffer</h2>
                 </div>
                 <div className="content-row">
 
-                    <div className="content-column col-lg-6 col-md-12 col-sm-12">
+                    <div className="content-column col-lg-6 col-md-12 col-sm-12" data-aos="fade-up-right">
                         <div className="inner-column">
 
                             <div className="internet-block">
@@ -53,7 +53,7 @@ const Facility = () => {
                         </div>
                     </div>
 
-                    <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                    <div className="image-column col-lg-6 col-md-12 col-sm-12" data-aos="fade-up-left">
                         <div className="inner-column">
                             <div className="image">
                                 <img src={map} alt="" className='map-image' />

@@ -153,7 +153,7 @@ const Packages = () => {
                 </div>
 
                 <div className="price-header-container">
-                    <h1 className="title-h1 text-center title-around-flex"><span>pricing table</span></h1>
+                    <h1 className="title-h1 text-center title-around-flex"><span>Try Our Most Popular Packages</span></h1>
                 </div>
 
                 <div className='pricing-table'>

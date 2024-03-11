@@ -4,7 +4,7 @@
   padding: 110px 0px 70px;
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: rgb(37, 37, 37);
+  /* background-color: rgb(37, 37, 37); */
 }
 
 .internet-section-four .shadow-layer-one {
@@ -34,7 +34,7 @@
 
 .sec-title-three.centered {
   text-align: center;
-  color: #fff;
+  color: #000000;
   font-size: 42px;
 }
 

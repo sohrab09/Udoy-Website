@@ -1,6 +1,6 @@
 .mainContainer {
   background-image: url("../../assets/pattern-3.png");
-  background-color: #181828;
+  /* background-color: #181828; */
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -194,7 +194,7 @@
 }
 
 .title-h1 {
-  margin-top: 1em;
+  /* margin-top: 1em; */
   margin-bottom: 1em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -205,8 +205,8 @@
   background-color: rgba(71, 71, 72, 0.2);
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
-  /* padding-top: 45px;
-  padding-bottom: 34px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.13),
     -20px -20px 60px rgba(29, 29, 29, 0.08);
@@ -284,7 +284,9 @@ figure {
 }
 
 .specification-body {
-  color: #5f727f;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .pricing-column {
