@@ -2,8 +2,9 @@
   position: relative;
   overflow: hidden;
   padding: 110px 0px 70px;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   /* background-color: rgb(37, 37, 37); */
 }
 

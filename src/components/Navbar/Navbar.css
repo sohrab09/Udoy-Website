@@ -1,6 +1,5 @@
 .navbar {
   background-color: #ffffff;
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +140,7 @@
     border: none;
   }
   .nav-links {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     width: 100%;
     display: table;
   }

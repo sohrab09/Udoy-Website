@@ -45,10 +45,11 @@ function NavBar() {
 
                         <li className="nav-item">
                             <NavLink
-                                to="/bill-pay"
+                                to="https://payment.udoyadn.com/"
                                 activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
+                                target="_blank"
                             >
                                 Bill Pay
                             </NavLink>
@@ -92,10 +93,11 @@ function NavBar() {
                         <li className="nav-item">
                             <NavLink
                                 exact
-                                to="/self-care-login"
+                                to="https://selfcare.udoyadn.com/"
                                 activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
+                                target="_blank"
                             >
                                 Self Care Login
                             </NavLink>

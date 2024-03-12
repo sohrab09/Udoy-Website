@@ -13,6 +13,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 
 function App() {
@@ -38,10 +39,10 @@ function App() {
             <Route path="/self-care-login" element={<SelfCareLogin />} />
           </Routes>
         </div>
-
-        <Footer />
-
       </Router>
+
+      <ScrollToTop />
+      <Footer />
     </>
   );
 }
