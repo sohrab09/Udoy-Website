@@ -41,6 +41,8 @@ const renderIcon = (id) => {
 
 const HomeInternet = () => {
 
+    document.title = "Home | Udoy Internet"
+
     const [renderIndex, setRenderIndex] = useState(0);
 
     useEffect(() => {

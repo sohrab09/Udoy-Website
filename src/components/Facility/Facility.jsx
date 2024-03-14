@@ -13,7 +13,7 @@ const Facility = () => {
             <div className="shadow-layer-two" style={{ backgroundImage: `url(${shadow2})` }}></div>
             <div className="auto-container">
                 <div className="sec-title-three light centered" data-aos="fade-down">
-                    <h2>UDOY Internet <br /> Don’t Suffer The Buffer</h2>
+                    <h2 style={{ color: '#000' }}>UDOY Internet <br /> Don’t Suffer The Buffer</h2>
                 </div>
                 <div className="content-row">
 
