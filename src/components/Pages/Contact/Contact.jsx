@@ -4,6 +4,7 @@ import shadow1 from '../../../assets/10.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationCrosshairs, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faDribbble, faFacebook, faGooglePlusG, faLinkedin, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Post } from '../../../https/https';
 
 
 const Contact = () => {
@@ -33,15 +34,24 @@ const Contact = () => {
         e.preventDefault();
 
         const data = {
-            firstName: contactInfo.firstName,
-            lastName: contactInfo.lastName,
-            email: contactInfo.email,
-            phone: contactInfo.phone,
-            subject: contactInfo.subject,
-            message: contactInfo.message
+            FirstName: contactInfo.firstName,
+            LastName: contactInfo.lastName,
+            Email: contactInfo.email,
+            Mobile: contactInfo.phone,
+            Subject: contactInfo.subject,
+            Body: contactInfo.message
         }
 
         console.log("data ---------->>>>>>", data);
+
+        try {
+            Post('/api/UdoySiteApi/EmailSend', data)
+                .then((res) => {
+                    console.log(res)
+                })
+        } catch (error) {
+            console.log(error)
+        }
     }
 
 
