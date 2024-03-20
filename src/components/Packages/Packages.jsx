@@ -2,28 +2,12 @@ import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import './Packages.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useState } from 'react';
-import { Get } from '../../https/https';
+import { useContext } from 'react';
+import DataContext from '../../Context/DataContext';
 
 const Packages = () => {
 
-    const [packages, setPackages] = useState([]);
-
-    const getPackageList = async () => {
-        try {
-            Get('/api/UdoySiteApi/GetPackageList')
-                .then((res) => {
-                    setPackages(res.data)
-                })
-        } catch (error) {
-            console.log(error)
-        }
-    };
-
-    useEffect(() => {
-        getPackageList();
-    }, []);
-
+    const { packages } = useContext(DataContext);
 
     return (
         <section className="mainContainer">

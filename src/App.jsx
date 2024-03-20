@@ -14,6 +14,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import { DataProvider } from "./Context/DataContext";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
   }, [])
 
   return (
-    <>
+    <DataProvider>
       <Router>
         <NavBar />
 
@@ -43,7 +44,7 @@ function App() {
 
       <ScrollToTop />
       <Footer />
-    </>
+    </DataProvider>
   );
 }
 

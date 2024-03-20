@@ -6,17 +6,17 @@ import pattern from '../../../assets/pattern-7.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { useEffect, useState } from 'react';
-import { Get } from '../../../https/https';
+import { useContext, useEffect, useState } from 'react';
+import DataContext from '../../../Context/DataContext';
 
 
 const HomeInternet = () => {
 
     document.title = "Home | Udoy Internet"
 
-    const [renderIndex, setRenderIndex] = useState(0);
+    const { packages } = useContext(DataContext);
 
-    const [packages, setPackages] = useState([]);
+    const [renderIndex, setRenderIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -25,24 +25,6 @@ const HomeInternet = () => {
 
         return () => clearInterval(interval);
     }, []);
-
-
-
-    const getPackageList = async () => {
-        try {
-            Get('/api/UdoySiteApi/GetPackageList')
-                .then((res) => {
-                    setPackages(res.data)
-                })
-        } catch (error) {
-            console.log(error)
-        }
-    };
-
-    useEffect(() => {
-        getPackageList();
-    }, []);
-
 
 
     return (
@@ -70,7 +52,7 @@ const HomeInternet = () => {
                     {
                         packages.map((item, index) => {
                             return (
-                                <div className="column" key={index}>
+                                <div className="column" key={index} data-aos="zoom-in-up">
                                     <div className=
                                         {`pricing-card 
                                               ${index % 4 === renderIndex % 4 ? 'basic' :
