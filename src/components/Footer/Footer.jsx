@@ -27,10 +27,11 @@ const Footer = () => {
                     <div className="footer-col" data-aos="fade-down-right">
                         <h4>Quick Link</h4>
                         <ul>
-                            <li><a href="#">Home Internet</a></li>
-                            <li><a href="#">SME Internet</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li></ul>
+                            <li><a href="/">Main</a></li>
+                            <li><a href="/home-internet">Home Internet</a></li>
+                            <li><a href="/sme-internet">SME Internet</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li></ul>
                     </div>
                     <div className="footer-col" data-aos="fade-down-left">
                         <h4>follow us</h4>

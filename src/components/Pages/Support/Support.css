@@ -1,0 +1,31 @@
+.support-container {
+  background-image: url("../../../assets/pattern-11.png");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.support-content {
+  animation: moveUpDown 5s infinite ease;
+}
+
+.support-content h1 {
+  background: linear-gradient(to right, red, green);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}

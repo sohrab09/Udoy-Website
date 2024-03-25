@@ -1,5 +1,9 @@
 .contact-channel {
-  background: #fff4f4;
+  background-image: url("../../assets/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
 }
 .py-5 {
   padding: 80px 0;
@@ -18,18 +22,22 @@
 }
 
 .heading {
-  font-size: 36px;
+  font-size: 42px;
   line-height: 46px;
-  font-family: "Sora", sans-serif;
-  font-weight: 700;
-  margin: 0 0 15px;
+  letter-spacing: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  margin: 0 auto 40px;
+  color: #fff;
 }
 
 .sub-heading {
-  max-width: 720px;
-  color: #191a24;
+  max-width: 750px;
+  color: #fff;
   margin: 0 auto 40px;
-  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
   font-size: 18px;
 }
 
