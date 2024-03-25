@@ -57,6 +57,12 @@
 .contact-page-section {
   position: relative;
   padding: 110px 0px 110px;
+  background-image: url("../../../assets/pattern-25.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .contact-page-section .info-column {
